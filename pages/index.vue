@@ -19,6 +19,13 @@ export default {
     }
   },
 
+  components:{
+     CallSection: () => import("@/components/CallSection.vue"),
+     UserData: () => import("@/components/UserData.vue"),
+     NotficationSettings: () => import("@/components/NotficationSettings.vue"),
+     OtherSettings: () => import("@/components/OtherSettings.vue")
+  },
+
   methods:{
     ...mapActions({
       loginUser:'login',
